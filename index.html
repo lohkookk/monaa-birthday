@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/title.jpeg" type="image/png">
+    <title>Happy 20th Birthday Inaa ❤️</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="overlay-start">
+        <div class="overlay-content">
+            <h1>Hai Cantiik! ❤️</h1>
+            <p>Ada sesuatu yang spesial buat kamu...</p>
+            <button class="start-btn" onclick="startJourney()">Buka Sekarang 💌</button>
+        </div>
+    </div>
+    
+
+    <audio id="bgMusic" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="music-control" onclick="toggleMusic()">
+        🎵
+    </div>
+
+    <header id="home">
+        <h3>06 Februari 2026</h3>
+        <h1>Happy</h1>
+        <h4>Birthday!</h4>
+        <h2>Sadiva Ina</h2>
+        <!-- <div class="scroll-down">↓</div> -->
+    </header>
+
+
+        
+<section class="section">
+    <div class="message-box">
+        <div class="message-content">
+            <img src="assets/wishes.png" alt="photo" class="message-photo">
+            <div class="message-text">
+                <h2>Hai, inaa</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+                </p>
+                 <p>
+                    Suspendisse potenti. Cras in purus eu magna vulputate luctus. Mauris egestas at nibh nec finibus. Aliquam erat volutpat. Mauris euismod libero eu risus convallis, ac ultricies neque suscipit. Integer ut tincidunt leo. Suspendisse potenti. Ut ut tortor ac ante sollicitudin euismod. Vivamus viverra, ante non pretium feugiat, dui libero dapibus odio, vel suscipit nunc ante et nisi. Donec vel leo ac ligula hendrerit dictum.
+                </p>
+                <p>
+                    someone who loves you,<br> Rajisthaa
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+        <section class="section">
+            <h2 style="text-align: center;">Our Best Memories 📸</h2>
+            <div class="gallery-grid">
+                <img src="assets/album25.jpeg" class="gallery-item" alt="Foto 1">
+                <img src="assets/album24.jpeg" class="gallery-item" alt="Foto 2">
+                <img src="assets/album4.jpeg" class="gallery-item" alt="Foto 3">
+                <img src="assets/album5.jpeg" class="gallery-item" alt="Foto 4">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 style="text-align: center;">Sebagian Album Kita 🎞️</h2>
+            <p style="text-align: center; font-family: 'Righteous', cursive; font-size: 0.9rem;">(Klik buku nya sampai habis yaa cantiik)</p>
+            
+            <div class="book-wrapper">
+                <div class="book" onclick="nextPage()">
+                    
+                    <div class="page cover">
+                        <p style="font-size: 3rem;">💌</p>
+                        <h1 style="font-size: 0.8rem; ">Sadiva's Special Birthday Album</h1>
+                    </div>
+
+                    <div class="page"><img src="assets/album1.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album2.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album3.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album4.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album5.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album6.jpeg" alt="Foto"></div>
+                   <div class="page"><img src="assets/album13.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album7.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album8.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album9.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album10.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album11.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album12.jpeg" alt="Foto"></div>
+                
+                    <div class="page"><img src="assets/album14.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album15.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album16.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album17.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album18.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album19.jpeg" alt="Foto"></div>
+                    <div class="page"><img src="assets/album20.jpeg" alt="Foto"></div>
+                    
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+                <button class="reset-btn" onclick="resetBook()">Baca Lagi ↺</button>
+            </div>
+        </section>
+
+         <section class="section">
+            <h2 style="text-align: center;">Main Puzzle Yuuk!🧩</h2>
+            <p style="text-align: center; font-family: 'Righteous', cursive; margin-bottom: 1rem; font-size: 0.9rem">(Klik satu kotak, abistuu klik kotak yang lain untuk nukar posisinya sampai gambarnya bener)</p>
+            <div class="puzzle-wrapper">
+                <div id="puzzle-container"></div>
+                <div id="puzzle-success-message">
+                    <p style="font-family: 'Righteous', cursive;">Yeaay kamuu berhasiil</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 style="text-align: center; margin-bottom: 10px;">Cari Pesan Rahasia 🔦</h2>
+            <p style="text-align: center; font-family: 'Righteous', cursive; font-size: 0.9rem; margin-bottom: 20px; margin-top: -0.7rem;">(Gerakkin kursor / sentuh layar di kotak hitam untuk lihat isinya)</p>
+
+            <div id="spotlight-container" onmousemove="moveSpotlight(event)" ontouchmove="moveSpotlight(event)">
+                <div id="spotlight-mask"></div>
+                <div class="hidden-content">
+                    <span style="top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.5rem; color: black;">I Love You!</span>
+                    <span style="top: 20%; left: 20%; color: black;">Haii</span>
+                    <span style="bottom: 20%; right: 20%; color: black;">Cantik ❤️</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 style="text-align: center;">Photobooth Buat Cantiknyaa Akuu 🩷🥰 </h2>
+            <p style="font-family: 'Righteous', cursive; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">Siapin 4 pose lucuuu kamuu yaa! Timer 5 detik.</p>
+
+            <div class="booth-container">
+                <div class="booth-frame">
+                    <video id="video-feed" autoplay playsinline></video>
+                    
+                    <div id="countdown-overlay" style="display:none;">5</div>
+
+                    <img id="photo-result" src="" alt="Hasil Foto">
+                    
+                    <canvas id="photo-canvas" style="display:none;"></canvas>
+                </div>
+
+                <div id="mini-previews"></div>
+
+                <div class="booth-controls">
+                    <button id="btn-start" class="booth-btn" onclick="startPhotoSession()">📸 Mulai 4 Pose!</button>
+                    <button id="btn-retake" class="booth-btn secondary" style="display:none;" onclick="resetCamera()">↺ Foto Ulang </button>
+                    <a id="btn-download" class="booth-btn" style="display:none;" download="Moment-kita.png">💾 Simpan Photo</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer style="text-align: center; padding: 2rem; color: #888;">
+            <p>Made with ❤️ by Rajisthaa</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // --- 1. SCROLL ANIMATION ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // --- 2. CONFETTI EFFECT ---
+        function launchConfetti() {
+            confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        }
+
+        // --- 3. SURPRISE BUTTON ---
+        function showSurprise() {
+            const div = document.getElementById('surprise-div');
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "block";
+                launchConfetti();
+                div.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // --- 4. MUSIC CONTROL ---
+        const audio = document.getElementById('bgMusic');
+        let isPlaying = false;
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause(); isPlaying = false; document.querySelector('.music-control').innerHTML = "🎵";
+            } else {
+                audio.play(); isPlaying = true; document.querySelector('.music-control').innerHTML = "⏸️";
+            }
+        }
+
+        // --- LOGIKA PEMBUKA (START) ---
+        function startJourney() {
+            const overlay = document.getElementById('overlay-start');
+            const audio = document.getElementById('bgMusic');
+            
+            overlay.style.opacity = '0';
+            setTimeout(() => { overlay.style.display = 'none'; }, 1000);
+
+            audio.play().then(() => {
+                isPlaying = true;
+                document.querySelector('.music-control').innerHTML = "⏸️";
+            }).catch(error => {
+                console.log("Autoplay dicegah browser, user harus interaksi dulu.");
+            });
+            
+            launchConfetti();
+        }
+
+
+        function createRainDrop() {
+            const container = document.getElementById('memory-rain-container');
+            const img = document.createElement('img');
+            img.src = rainImages[Math.floor(Math.random() * rainImages.length)];
+            img.classList.add('rain-drop');
+            const size = Math.random() * 60 + 40;
+            img.style.width = `${size}px`;
+            img.style.left = `${Math.random() * 100}vw`;
+            const duration = Math.random() * 5 + 5;
+            img.style.animationDuration = `${duration}s`;
+            container.appendChild(img);
+            setTimeout(() => { img.remove(); }, duration * 1000);
+        }
+
+        // --- LOGIKA SENTER AJAIB ---
+        function moveSpotlight(e) {
+            const container = document.getElementById('spotlight-container');
+            const mask = document.getElementById('spotlight-mask');
+            const rect = container.getBoundingClientRect();
+            
+            let clientX, clientY;
+            if(e.touches) {
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+            } else {
+                clientX = e.clientX;
+                clientY = e.clientY;
+            }
+
+            const x = clientX - rect.left;
+            const y = clientY - rect.top;
+
+            mask.style.setProperty('--x', x + 'px');
+            mask.style.setProperty('--y', y + 'px');
+        }
+
+        // --- 6. PUZZLE FEATURE ---
+        const puzzleContainer = document.getElementById('puzzle-container');
+        let puzzlePieces = [];
+        const correctOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+        let currentOrder = [...correctOrder];
+        let selectedPiece = null;
+
+        function shuffleArray(array) {
+             for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            if(JSON.stringify(array) === JSON.stringify(correctOrder)) shuffleArray(array);
+        }
+
+        function createPuzzle() {
+            shuffleArray(currentOrder);
+            puzzleContainer.innerHTML = '';
+            puzzlePieces = [];
+            for (let i = 0; i < 9; i++) {
+                const piece = document.createElement('div');
+                piece.classList.add('puzzle-piece');
+                piece.dataset.index = i;
+                piece.style.backgroundImage = "url('assets/album22.jpeg')"; // Pastikan path benar
+                
+                const row = Math.floor(correctOrder[i] / 3);
+                const col = correctOrder[i] % 3;
+                piece.style.backgroundPosition = `${col * 50}% ${row * 50}%`;
+                piece.addEventListener('click', handlePieceClick);
+                puzzlePieces.push(piece);
+            }
+            currentOrder.forEach(index => { puzzleContainer.appendChild(puzzlePieces[index]); });
+        }
+
+        function handlePieceClick(e) {
+            const clickedPiece = e.target;
+            if (!selectedPiece) {
+                selectedPiece = clickedPiece;
+                clickedPiece.classList.add('selected');
+            } else if (selectedPiece === clickedPiece) {
+                selectedPiece.classList.remove('selected');
+                selectedPiece = null;
+            } else {
+                swapPieces(selectedPiece, clickedPiece);
+                selectedPiece.classList.remove('selected');
+                selectedPiece = null;
+                checkWin();
+            }
+        }
+
+        function swapPieces(piece1, piece2) {
+            const tempNextSibling = piece1.nextSibling === piece2 ? piece1 : piece1.nextSibling;
+            puzzleContainer.insertBefore(piece1, piece2);
+            puzzleContainer.insertBefore(piece2, tempNextSibling);
+        }
+
+        function checkWin() {
+            const currentDomOrder = Array.from(puzzleContainer.children).map(piece => parseInt(piece.dataset.index));
+            if (JSON.stringify(currentDomOrder) === JSON.stringify(correctOrder)) {
+                document.getElementById('puzzle-success-message').style.display = 'block';
+                launchConfetti();
+                Array.from(puzzleContainer.children).forEach(piece => {
+                    piece.style.pointerEvents = 'none';
+                    piece.style.border = 'none';
+                });
+            }
+        }
+
+        // --- 7. BOOK ALBUM LOGIC ---
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        const totalPages = pages.length;
+        const resetBtn = document.querySelector('.reset-btn');
+
+        function initBook() {
+            pages.forEach((page, index) => {
+                page.style.zIndex = totalPages - index;
+            });
+        }
+        initBook();
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                const activePage = pages[currentPage];
+                activePage.classList.add('flipped');
+                activePage.style.zIndex = 100 + currentPage;
+                currentPage++;
+                
+                if (currentPage === totalPages) {
+                    resetBtn.style.display = 'inline-block';
+                }
+            }
+        }
+
+        function resetBook() {
+            pages.forEach(page => { page.classList.remove('flipped'); });
+            setTimeout(() => { initBook(); }, 500);
+            currentPage = 0;
+            resetBtn.style.display = 'none';
+        }
+
+        // --- 8. PHOTOBOOTH 4 FRAME LOGIC ---
+        let videoStream = null;
+        let capturedImages = []; 
+
+        async function startPhotoSession() {
+            const video = document.getElementById('video-feed');
+            const btnStart = document.getElementById('btn-start');
+            const previews = document.getElementById('mini-previews');
+            const resultImg = document.getElementById('photo-result');
+            const btnRetake = document.getElementById('btn-retake');
+            const btnDownload = document.getElementById('btn-download');
+
+            resultImg.style.display = 'none';
+            video.style.display = 'block';
+            previews.innerHTML = ''; 
+            capturedImages = [];
+            btnStart.style.display = 'none';
+            btnRetake.style.display = 'none';
+            btnDownload.style.display = 'none';
+
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" } });
+                videoStream = stream;
+                video.srcObject = stream;
+                setTimeout(() => takeSequence(4), 1000); 
+            } catch (err) {
+                alert("Gagal akses kamera. Izinkan dulu ya!");
+                btnStart.style.display = 'inline-block';
+            }
+        }
+
+        function takeSequence(count) {
+            if (count > 0) {
+                runCountdown(5, () => {
+                    captureSingleFrame();
+                    takeSequence(count - 1); 
+                });
+            } else {
+                finishSession();
+            }
+        }
+
+        function runCountdown(seconds, callback) {
+            const overlay = document.getElementById('countdown-overlay');
+            overlay.style.display = 'block';
+            overlay.innerText = seconds;
+
+            const interval = setInterval(() => {
+                seconds--;
+                if (seconds > 0) {
+                    overlay.innerText = seconds;
+                } else {
+                    clearInterval(interval);
+                    overlay.style.display = 'none';
+                    callback(); 
+                }
+            }, 1000);
+        }
+
+        function captureSingleFrame() {
+            const video = document.getElementById('video-feed');
+            const canvas = document.createElement('canvas');
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const ctx = canvas.getContext('2d');
+            
+            ctx.translate(canvas.width, 0);
+            ctx.scale(-1, 1);
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            
+            const dataUrl = canvas.toDataURL('image/png');
+            capturedImages.push(dataUrl);
+
+            const imgMini = document.createElement('img');
+            imgMini.src = dataUrl;
+            imgMini.className = 'mini-pic';
+            document.getElementById('mini-previews').appendChild(imgMini);
+            
+            video.style.opacity = 0.5;
+            setTimeout(() => video.style.opacity = 1, 200);
+        }
+
+        function finishSession() {
+            const video = document.getElementById('video-feed');
+            const finalCanvas = document.getElementById('photo-canvas');
+            if (videoStream) videoStream.getTracks().forEach(track => track.stop());
+
+            const w = 640; 
+            const h = 480; 
+            const gap = 30; 
+            const border = 50; 
+            const footer = 250; 
+
+            finalCanvas.width = (w * 2) + gap + (border * 2);
+            finalCanvas.height = (h * 2) + gap + (border * 2) + footer;
+            
+            const ctx = finalCanvas.getContext('2d');
+
+            ctx.fillStyle = "white";
+            ctx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
+
+            let loaded = 0;
+            capturedImages.forEach((src, i) => {
+                const img = new Image();
+                img.onload = () => {
+                    const col = i % 2;
+                    const row = Math.floor(i / 2);
+                    const x = border + (col * (w + gap));
+                    const y = border + (row * (h + gap));
+
+                    ctx.drawImage(img, x, y, w, h);
+                    ctx.strokeStyle = "#eee";
+                    ctx.lineWidth = 4;
+                    ctx.strokeRect(x, y, w, h);
+
+                    loaded++;
+                    if (loaded === 4) {
+                        finalizeCanvas(ctx, finalCanvas, footer);
+                    }
+                };
+                img.src = src;
+            });
+        }
+
+        function finalizeCanvas(ctx, canvas, footerHeight) {
+            const textX = canvas.width / 2;
+            const textY = canvas.height - (footerHeight / 1.5); 
+
+            // Font sudah diganti ke Arial
+            ctx.font = "bold 60px Righteous"; 
+            ctx.fillStyle = "black"; 
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            
+            ctx.fillText("Sadiva's 20th Birthday", textX, textY);
+            
+            ctx.font = "30px Arial";
+            ctx.fillStyle = "#888";
+            ctx.fillText("February 6, 2025", textX, textY + 60);
+
+            const finalData = canvas.toDataURL('image/png');
+            const resultImg = document.getElementById('photo-result');
+            const video = document.getElementById('video-feed');
+            
+            video.style.display = 'none';
+            resultImg.src = finalData;
+            resultImg.style.display = 'block';
+
+            document.getElementById('btn-retake').style.display = 'inline-block';
+            const btnDown = document.getElementById('btn-download');
+            btnDown.href = finalData;
+            btnDown.style.display = 'inline-block';
+        }
+
+        function resetCamera() {
+            startPhotoSession();
+        }
+
+        // --- GLOBAL WINDOW ONLOAD ---
+        window.onload = function() {
+            setInterval(createRainDrop, 800);
+            createPuzzle();
+            setTimeout(launchConfetti, 1000);
+        }
+    </script>
+</body>
+</html>
