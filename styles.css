@@ -482,23 +482,20 @@ header h2 {
 
 
 
-#video-feed {
+#video-feed,
+#photo-result {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     transform: scaleX(-1);
 }
 
 #photo-result {
     width: 100%;
     height: auto;
-    max-height: 100%;
-    object-fit: contain;
     display: none;
     border-radius: 5px;
     transform: none;
 }
-
 
 #countdown-overlay {
     position: absolute;
