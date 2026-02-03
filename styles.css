@@ -239,7 +239,7 @@ header h2 {
     justify-content: space-between;
 }
 
-.message-text p:nth-of-type(3){
+.message-text p:nth-of-type(5){
     font-size: 1.2rem;
     display: flex;
     line-height: 1.2;
@@ -732,7 +732,7 @@ header h2 {
         
     }
 
-    .message-text p:nth-of-type(3) {
+    .message-text p:nth-of-type(5) {
     font-size: 1rem;
     line-height: 1.2;
     justify-content: flex-end;
